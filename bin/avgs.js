@@ -2,11 +2,11 @@
  * @Author: maoyuyu
  * @Date: 2020-06-14 02:04:12
  * @LastEditors: maoyuyu
- * @LastEditTime: 2020-06-14 02:25:16
+ * @LastEditTime: 2020-06-14 02:35:27
  * @Description: 
  */ 
 
- console.log("avgs");
+console.log("avgs");
  
 const cmdName = "init"
 
