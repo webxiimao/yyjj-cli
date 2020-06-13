@@ -1,0 +1,14 @@
+{
+  "name": "yyjj-cli",
+  "version": "1.0.0",
+  "description": "cli be used to build app",
+  "main": "index.js",
+  "bin": {
+    "yyjj": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "webxiimao",
+  "license": "ISC"
+}
