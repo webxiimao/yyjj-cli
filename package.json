@@ -1,5 +1,5 @@
 {
-  "name": "yyjj-cli",
+  "name": "yyjj",
   "version": "1.0.0",
   "description": "cli be used to build app",
   "main": "index.js",
