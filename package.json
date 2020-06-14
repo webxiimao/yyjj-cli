@@ -4,7 +4,7 @@
   "description": "cli be used to build app",
   "main": "index.js",
   "bin": {
-    "yyjj": "index.js"
+    "yyjj": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
