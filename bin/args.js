@@ -2,7 +2,7 @@
  * @Author: maoyuyu
  * @Date: 2020-06-14 02:04:12
  * @LastEditors: maoyuyu
- * @LastEditTime: 2020-06-14 13:38:00
+ * @LastEditTime: 2020-06-14 14:32:15
  * @Description: 
  */ 
 
@@ -18,13 +18,13 @@ program.version(version)
   .description('yyjj-cli')
   .option('-p, --port <port>', 'specify a port')
   .option('-h, --help', 'more information on a command')
-  .command('create [name]').description('create a new app').alias('i')
+  .command('init [name]').description('init a new app').alias('i')
  
 program.parse(process.argv);
 const avgs = program.opts()
 console.log(program.args);
 
-const cmdName = "create"
+const cmdName = "init"
 
 module.exports = {
   cmdName,
