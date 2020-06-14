@@ -1,11 +1,11 @@
+#!/usr/bin/env node
 /*
  * @Author: maoyuyu
  * @Date: 2020-06-13 20:03:52
  * @LastEditors: maoyuyu
- * @LastEditTime: 2020-06-14 02:29:29
+ * @LastEditTime: 2020-06-14 12:40:33
  * @Description: 入口文件
  */ 
-const fs = require('fs')
 const path = require('path')
 // 执行avgs校验方法 及获取avgs参数
 const { cmdName, avgs } = require('./bin/avgs')

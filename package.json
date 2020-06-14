@@ -4,11 +4,17 @@
   "description": "cli be used to build app",
   "main": "index.js",
   "bin": {
-    "yyjj": "bin/index.js"
+    "yyjj": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "webxiimao",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^5.1.0",
+    "download-git-repo": "^3.0.2",
+    "ora": "^4.0.4"
+  }
 }
