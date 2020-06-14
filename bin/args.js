@@ -2,7 +2,7 @@
  * @Author: maoyuyu
  * @Date: 2020-06-14 02:04:12
  * @LastEditors: maoyuyu
- * @LastEditTime: 2020-06-14 17:24:14
+ * @LastEditTime: 2020-06-14 17:50:37
  * @Description: 
  */ 
 
@@ -12,8 +12,9 @@ const { program } = require('commander');
 // const inquirer = require('inquirer')
 const inquirerContext = require('./utils/inquirerContext')
 const { getConfigDirFile } = require('./utils/util')
+const { ROOTPATH } = require('./utils/workPath')
 
-const packageJson = fs.readFileSync(path.join(process.cwd(), 'package.json'))
+const packageJson = fs.readFileSync(path.join(ROOTPATH, 'package.json'))
 const version = JSON.parse(packageJson.toString()).version
 
 // console.log(process.argv);
@@ -21,10 +22,10 @@ program.version(version)
   .description('yyjj-cli')
   .option('-p, --port <port>', 'specify a port')
   .option('-h, --help', 'more information on a command')
-  .command('init').description('初始化一个新项目')
+  .command('init <name>').description('初始化一个新项目')
 
 program
-  .command('add <path>').description('新建页面或者模块').action(() => {})
+  .command('add <path>').description('新建页面或者模块')
  
 program.parse(process.argv);
 let options = program.opts()
